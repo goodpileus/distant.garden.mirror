@@ -1,0 +1,260 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  background: black;
+  color: black;
+  padding: 2rem;
+}
+
+iframe {
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.speech-wrap {
+  width: 100%;
+  height: 100%;
+  /* background:gray; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.lead-in {
+  width: 100%;
+  height: 20vh;
+}
+
+.divider {
+  /* max-width: 48rem; */
+  /* min-width: 15rem; */
+  padding: 1rem;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+  position: relative;
+  align-self: center;
+  text-align: center;
+
+  background: black;
+  box-shadow: 0px 0px 15px -2px rgb(194, 204, 222);
+  color:rgb(194, 204, 222);
+}
+
+.saki-name {
+  color: rgb(204, 147, 208);
+}
+
+.chino-name {
+  color: rgb(156, 198, 144);
+}
+
+.date {
+  font-size:.8rem;
+  margin:3rem 0;
+}
+
+.end {
+  margin-top: 3rem;
+}
+
+.speech-b {
+  max-width: 48rem;
+  min-width: 15rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+
+  background: black;
+  /* background:rgb(194, 204, 222); */
+  box-shadow: 0px 0px 15px -2px rgb(194, 204, 222);
+  color:rgb(194, 204, 222);
+}
+
+.nontsi {
+  /* background: rgb(194, 204, 222); */
+  align-self: flex-start;
+  /* max-width: 100%; */
+  /* min-width:100%; */
+  box-shadow: 0px 0px 15px -2px rgb(194, 204, 222);
+}
+
+.chino {
+  color: rgb(156, 198, 144);
+  /* background: rgb(156, 198, 144); */
+  align-self: flex-end;
+  box-shadow: 0px 0px 15px -2px rgb(156, 198, 144);
+}
+
+.saki {
+  color: rgb(204, 147, 208);
+  /* background: rgb(204, 147, 208); */
+  align-self: flex-start;
+  box-shadow: 0px 0px 15px -2px rgb(204, 147, 208);
+}
+
+.speaker {
+  /* font-size: 1.5rem; */
+  margin-bottom: .5rem;
+  /* font-style: italic; */
+  font-weight: bolder;
+  position: absolute;
+}
+
+.first-speaker {
+  position: relative;
+}
+
+.text {
+  padding-left: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.timestamp {
+  font-family: monospace;
+  font-size: 1rem;
+  /* color: black; */
+  opacity: .5;
+  text-align: right;
+  position: absolute;
+  right: 1.5rem;
+  bottom: .2rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width:48rem;
+  max-width: 100%;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.chat-head {
+  /* font-family: 'zhakataregular'; */
+  position: fixed;
+  top:0;
+  left:0;
+  opacity: 1;
+  width:100%;
+  /* max-height:3rem; */
+  color:rgb(194, 204, 222);
+  box-shadow: 0px 0px 15px -2px rgb(194, 204, 222);
+  background: rgb(194, 204, 222);
+  background: black;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  /* padding:1.3rem; */
+  height:3rem;
+  z-index: 1;
+  transition: background .3s ease;
+}
+
+.chat-head:hover {
+  background:rgb(194, 204, 222);
+}
+
+.chat-fill {
+  width:10%;
+  /* align-self: flex-end; */
+}
+
+.return {
+  text-decoration: none;
+  line-height: 0;
+  text-align: left;
+  color:rgb(194, 204, 222);
+  /* position: relative; */
+  /* top:.2rem; */
+}
+
+.return:hover {
+  color: rgb(156, 198, 144);
+}
+
+.chat-name {
+  width:100%;
+}
+
+.sub {
+  font-size: 1.2rem;
+}
+
+.top-btn {
+  background: black;
+  /* background:rgb(194, 204, 222); */
+  box-shadow: 0px 0px 15px -2px rgb(194, 204, 222);
+  color:rgb(194, 204, 222);
+  position: fixed;
+  width:2.5rem;
+  height:2.5rem;
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  bottom:2rem;
+  right:2rem;
+  text-decoration: none;
+  z-index: 1;
+  transition: background .3s ease, color .3s ease;
+}
+
+.top-btn:hover {
+  background:rgb(194, 204, 222);
+}
+
+@media (min-width:1600px) {
+  body {
+    /* font-size: 16rem; */
+    /* line-height: 11rem; */
+  }
+}
+
+@media (max-width:900px) {
+  body {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    padding: .8rem;
+  }
+
+  .speech-b {
+    max-width: 85vw;
+    overflow: hidden;
+  }
+
+  .chat-head {
+    font-size: 1.1rem;
+  }
+
+  .top-btn {
+    bottom:.8rem;
+    right:.8rem;
+    width:3rem;
+    height:3rem;
+    font-size: 1.8rem;
+  }
+}
